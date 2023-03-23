@@ -9,7 +9,7 @@ class BiliRcmSpider(scrapy.Spider):
     name = "bili_rcm"
 
     def start_requests(self):
-        for i in range(100):
+        for i in range(100000):
             url = "https://api.bilibili.com/x/web-interface/wbi/index/top/feed/rcmd"
             url_params = {
                 'y_num': 5,
